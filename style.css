@@ -19,6 +19,40 @@ body {
     grid-template-rows: 155px calc(100% - 205px) 50px;
 }
 
+#content {
+    padding: 20px;
+}
+
+.projs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: min(385px, 100%);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #8b8b8b;
+    padding: 20px 25px;
+    margin: 20px 10px;
+}
+
+.description {
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actions button {
+    margin: 5px;
+}
+
 #header {
     background-color: chartreuse;
     display: grid;
