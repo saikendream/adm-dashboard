@@ -41,6 +41,19 @@ body {
 
 #topbar {
     background-color: deeppink;
+    display: grid;
+    grid-template-columns: calc(100% - 300px) 300px;
+    align-items: center;
+}
+
+.search {
+    padding: 10px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 50px 250px;
+    padding: 10px;
 }
 
 #tools {
