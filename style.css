@@ -1,3 +1,48 @@
 * {
     font-family: 'Poppins', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
+
+body {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 75px calc(100% - 75px);
+}
+
+#menu {
+    background-color: aqua;
+    padding: 25px;
+}
+
+#main {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-rows: 200px calc(100% - 250px) 50px;
+}
+
+#header {
+    background-color: chartreuse;
+    display: grid;
+    grid-template-rows: 50px 150px;
+}
+
+#body {
+    display: grid;
+    grid-template-columns: calc(100% - 365px) 365px;
+}
+
+#footer {
+    background-color: coral;
+    text-align: center;
+}
+
+#sidebar {
+    background-color: greenyellow;
+}
+
+#topbar {
+    background-color: deeppink;
+}
+
+#tools {
+    background-color: darksalmon;
+}
