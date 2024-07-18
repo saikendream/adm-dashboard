@@ -16,13 +16,13 @@ body {
 #main {
     background-color: blueviolet;
     display: grid;
-    grid-template-rows: 200px calc(100% - 250px) 50px;
+    grid-template-rows: 155px calc(100% - 205px) 50px;
 }
 
 #header {
     background-color: chartreuse;
     display: grid;
-    grid-template-rows: 50px 150px;
+    grid-template-rows: 50px 105px;
 }
 
 #body {
@@ -58,4 +58,40 @@ body {
 
 #tools {
     background-color: darksalmon;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.wlc {
+    padding: 15px 50px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 75px 150px;
+    align-items: center;
+}
+
+.wlc img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 65px;
+    width: 65px;
+    padding: 5px;
+    margin: auto;
+}
+
+.wlc p {
+    padding: 0;
+    margin: 0;
+}
+
+.wlc h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
 }
