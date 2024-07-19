@@ -79,6 +79,26 @@ body {
     padding: 20px;
 }
 
+.user {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-items: center;
+}
+
+.user img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 45px;
+    width: 45px;
+}
+
+.username {
+    font-size: 12px;
+}
+
 #topbar {
     background-color: deeppink;
     display: grid;
