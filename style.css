@@ -146,6 +146,17 @@ body {
     display: grid;
     grid-template-columns: 50px 250px;
     padding: 10px;
+    align-items: center;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+}
+
+.profile div {
+    display: flex;
+    align-items: center;
 }
 
 #tools {
@@ -206,3 +217,6 @@ button:active {
     background-color: #052e16;
 }
 
+img {
+    border-radius: 50%;
+}
