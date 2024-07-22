@@ -27,7 +27,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2,min(calc(100% / 2 - 45px), 100%));
     gap: 20px 45px;
-    resize: both;
     overflow: auto;
 }
 
