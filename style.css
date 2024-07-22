@@ -41,6 +41,11 @@ body {
     width: 250px;
 }
 
+#menu hr {
+    border: none;
+    margin: 20px;
+}
+
 #main {
     background-color: blueviolet;
     display: grid;
