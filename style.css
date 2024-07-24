@@ -8,11 +8,16 @@ body {
     grid-template-columns: 75px calc(100% - 75px);
 }
 
+a:visited {
+    color: blue !important;
+}
+
 #menu {
     background-color: aqua;
     z-index: 1;
     overflow: hidden;
     width: 75px;
+    white-space: nowrap;
     transition: width .4s ease-in-out;
 }
 
@@ -44,6 +49,24 @@ body {
 #menu hr {
     border: none;
     margin: 20px;
+}
+
+#menu ul i {
+    font-size: 25px;
+    padding-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 40px;
+    margin: 30px 15px;
+}
+
+.logo h1 {
+    cursor: default;
 }
 
 #main {
@@ -159,6 +182,10 @@ body {
     align-items: center;
 }
 
+.profile div img {
+    margin: 0 20px;
+}
+
 #tools {
     background-color: darksalmon;
     display: grid;
@@ -184,12 +211,12 @@ body {
 
 .wlc p {
     padding: 0;
-    margin: 0;
+    margin: 0 15px;
 }
 
 .wlc h2 {
     padding: 0;
-    margin: 0;
+    margin: 0 15px;
 }
 
 .btns {
