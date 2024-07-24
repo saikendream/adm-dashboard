@@ -208,7 +208,6 @@ a, a:visited {
 .profile {
     display: grid;
     grid-template-columns: 50px 250px;
-    padding: 10px;
     align-items: center;
 }
 
@@ -220,10 +219,25 @@ a, a:visited {
 .profile div {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    height: 40px;
 }
 
-.profile div img {
-    margin: 0 20px;
+.profile div:hover {
+    background-color: rgba(0, 0, 0, .2);
+    transition: all .3s ease-in-out;
+}
+
+.profile img {
+    margin-right: 20px;;
+}
+
+.profile i {
+    font-size: 18px;
 }
 
 #tools {
