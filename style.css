@@ -6,14 +6,16 @@ body {
     display: grid;
     margin: 0;
     grid-template-columns: 75px calc(100% - 75px);
+    color: #111827;
 }
 
-a:visited {
-    color: blue !important;
+a, a:visited {
+    color: #111827;
+    text-decoration: none;
 }
 
 #menu {
-    background-color: aqua;
+    background-color: #333d29;
     z-index: 1;
     overflow: hidden;
     width: 75px;
@@ -58,6 +60,11 @@ a:visited {
 
 #menu a {
     text-decoration: none;
+    color: #a4ac86 !important;
+}
+
+.logo {
+    color: white;
 }
 
 .logo i {
@@ -70,7 +77,6 @@ a:visited {
 }
 
 #main {
-    background-color: blueviolet;
     display: grid;
     grid-template-rows: 155px calc(100% - 205px) 50px;
 }
@@ -114,23 +120,36 @@ a:visited {
 }
 
 #header {
-    background-color: chartreuse;
+    background-color: #582f0e;
     display: grid;
     grid-template-rows: 50px 105px;
+    color: white;
+}
+
+#header a,
+#header a:visited {
+    color: white;
 }
 
 #body {
     display: grid;
     grid-template-columns: calc(100% - 365px) 365px;
+    background-color: #c2c5aa;
 }
 
 #footer {
-    background-color: coral;
+    background-color: #936639;
     text-align: center;
+    color: white;
+}
+
+#footer a,
+#footer a:visited {
+    color: #f1f5f9;
+    text-decoration: underline;
 }
 
 #sidebar {
-    background-color: greenyellow;
     padding: 20px;
 }
 
@@ -155,14 +174,35 @@ a:visited {
 }
 
 #topbar {
-    background-color: deeppink;
     display: grid;
     grid-template-columns: calc(100% - 300px) 300px;
     align-items: center;
 }
 
 .search {
-    padding: 10px;
+    padding: 10px 25px;
+}
+
+.search input {
+    margin: 0 50px;
+    width: min(600px, 70%);
+    border-radius: 75px;
+    border: solid #a68a64;
+    background-color: #a68a64;
+    padding: 0 10px;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.search input:hover {
+    background-color: #936639;
+    transition: all .3s ease-in-out;
+}
+
+.search input:focus-visible {
+    outline: none;
+    border: solid #b6ad90;
+    transition: all .3s ease-in-out;
 }
 
 .profile {
@@ -187,9 +227,13 @@ a:visited {
 }
 
 #tools {
-    background-color: darksalmon;
     display: grid;
     grid-template-columns: 70% 30%;
+}
+
+#tools a,
+#tools a:visited {
+    color: white;
 }
 
 .wlc {
